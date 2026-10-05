@@ -1,0 +1,34 @@
+{
+  "cases": 42,
+  "complete": 26,
+  "growth_bytes": 913722,
+  "phase": "before-product-source",
+  "records": [
+    {
+      "bytes": 15011,
+      "path": "PLAN.md",
+      "sha256": "4508297de462e79dd0bf946a9a7c6b35cd258e304ee685fd1e3ea0046e42a0f9"
+    },
+    {
+      "bytes": 4308,
+      "path": "CONTRACT.md",
+      "sha256": "e791c8635df9bcde99ac30e34e7b25e451dfadbf3cd377da63aa4cb8cf4f900a"
+    },
+    {
+      "bytes": 16319,
+      "path": "scripts/freeze_oracles.py",
+      "sha256": "bc555f3b92989f931f0dc5b5447420dd197d2b1735b5609813949433699816cb"
+    },
+    {
+      "bytes": 94701,
+      "path": "tests/cases.json",
+      "sha256": "53adaa38d283ba478169e1e5832c93f139313f64513cee2ca0b0192ab26b8d9c"
+    },
+    {
+      "bytes": 920026,
+      "path": "tests/growth.json",
+      "sha256": "2c4a18619bf2dd2eeb697f5e0678e642242abe3bf01eb2d2d92c9b0b2acac7dc"
+    }
+  ],
+  "amendment": "Shared mutable construction input accidentally changed core-cap after its manual expected report was assembled. Restored that one input upper to null; expected report unchanged. Discovered after first product check; original freeze and formatter retained. No product output used to derive expected values."
+}

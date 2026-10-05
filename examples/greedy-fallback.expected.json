@@ -1,0 +1,281 @@
+{
+  "assurances": {
+    "availability": "unknown",
+    "build_metadata": "ignored-for-matching",
+    "compatibility": "unknown",
+    "package_existence": "unknown",
+    "policy": "synthetic-supplied-catalog-only",
+    "prereleases": "all-admitted",
+    "security": "unknown",
+    "selection": "one-candidate-per-package",
+    "unsupplied_catalog_possibilities": "unknown"
+  },
+  "catalog": {
+    "packages": [
+      {
+        "id": "A",
+        "index": 0,
+        "versions": [
+          {
+            "dependencies": [
+              {
+                "id": "d",
+                "index": 0,
+                "lower": {
+                  "inclusive": true,
+                  "version": "1.0.0"
+                },
+                "target": "B",
+                "upper": {
+                  "inclusive": true,
+                  "version": "1.0.0"
+                }
+              }
+            ],
+            "id": "a1",
+            "index": 0,
+            "version": "1.0.0"
+          },
+          {
+            "dependencies": [
+              {
+                "id": "d",
+                "index": 0,
+                "lower": {
+                  "inclusive": true,
+                  "version": "2.0.0"
+                },
+                "target": "B",
+                "upper": {
+                  "inclusive": true,
+                  "version": "2.0.0"
+                }
+              }
+            ],
+            "id": "a2",
+            "index": 1,
+            "version": "2.0.0"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "index": 1,
+        "versions": [
+          {
+            "dependencies": [],
+            "id": "v",
+            "index": 0,
+            "version": "1.0.0"
+          }
+        ]
+      }
+    ],
+    "roots": [
+      {
+        "id": "r",
+        "index": 0,
+        "lower": null,
+        "target": "A",
+        "upper": null
+      }
+    ]
+  },
+  "error": null,
+  "evaluation": "complete",
+  "finite_catalog_has_solution": true,
+  "input_profile": "finite-semver-catalog/1",
+  "limits": {
+    "assignments": 4096,
+    "dependencies": 48,
+    "dependencies_per_version": 4,
+    "depth": 8,
+    "identifier_chars": 64,
+    "identifiers": 16,
+    "nodes": 4096,
+    "numeric_digits": 32,
+    "output_bytes": 262144,
+    "packages": 6,
+    "preview": 16,
+    "raw_bytes": 65536,
+    "roots": 8,
+    "solutions": 128,
+    "version_chars": 256,
+    "version_occurrences": 130,
+    "versions": 18,
+    "versions_per_package": 3
+  },
+  "resolution": "solutions_found",
+  "schema": "finite-resolution-report/1",
+  "search": {
+    "assignment_space": 6,
+    "assignments_checked": 6,
+    "exhaustive": true,
+    "first_trial_valid": false,
+    "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+    "preview_omitted_count": 0,
+    "solution_count": 1,
+    "strategy": "exhaustive-cartesian",
+    "trial_preview": [
+      {
+        "choices": [
+          1,
+          0
+        ],
+        "index": 0,
+        "rejection": {
+          "code": "bound_mismatch",
+          "origin": {
+            "dependency_index": 0,
+            "kind": "dependency",
+            "package_index": 0,
+            "root_index": null,
+            "version_index": 1
+          }
+        },
+        "valid": false
+      },
+      {
+        "choices": [
+          1,
+          null
+        ],
+        "index": 1,
+        "rejection": {
+          "code": "missing_selected_version",
+          "origin": {
+            "dependency_index": 0,
+            "kind": "dependency",
+            "package_index": 0,
+            "root_index": null,
+            "version_index": 1
+          }
+        },
+        "valid": false
+      },
+      {
+        "choices": [
+          0,
+          0
+        ],
+        "index": 2,
+        "rejection": null,
+        "valid": true
+      },
+      {
+        "choices": [
+          0,
+          null
+        ],
+        "index": 3,
+        "rejection": {
+          "code": "missing_selected_version",
+          "origin": {
+            "dependency_index": 0,
+            "kind": "dependency",
+            "package_index": 0,
+            "root_index": null,
+            "version_index": 0
+          }
+        },
+        "valid": false
+      },
+      {
+        "choices": [
+          null,
+          0
+        ],
+        "index": 4,
+        "rejection": {
+          "code": "missing_selected_version",
+          "origin": {
+            "dependency_index": null,
+            "kind": "root",
+            "package_index": null,
+            "root_index": 0,
+            "version_index": null
+          }
+        },
+        "valid": false
+      },
+      {
+        "choices": [
+          null,
+          null
+        ],
+        "index": 5,
+        "rejection": {
+          "code": "missing_selected_version",
+          "origin": {
+            "dependency_index": null,
+            "kind": "root",
+            "package_index": null,
+            "root_index": 0,
+            "version_index": null
+          }
+        },
+        "valid": false
+      }
+    ]
+  },
+  "solutions": [
+    {
+      "checks": [
+        {
+          "lower_pass": true,
+          "lower_relation": null,
+          "matches": true,
+          "origin": {
+            "dependency_index": null,
+            "kind": "root",
+            "package_index": null,
+            "root_index": 0,
+            "version_index": null
+          },
+          "selected_version_index": 0,
+          "target_package_index": 0,
+          "upper_pass": true,
+          "upper_relation": null
+        },
+        {
+          "lower_pass": true,
+          "lower_relation": "equal",
+          "matches": true,
+          "origin": {
+            "dependency_index": 0,
+            "kind": "dependency",
+            "package_index": 0,
+            "root_index": null,
+            "version_index": 0
+          },
+          "selected_version_index": 0,
+          "target_package_index": 1,
+          "upper_pass": true,
+          "upper_relation": "equal"
+        }
+      ],
+      "choices": [
+        0,
+        0
+      ],
+      "index": 0,
+      "selections": [
+        {
+          "id": "A",
+          "package_index": 0,
+          "version": "1.0.0",
+          "version_id": "a1",
+          "version_index": 0
+        },
+        {
+          "id": "B",
+          "package_index": 1,
+          "version": "1.0.0",
+          "version_id": "v",
+          "version_index": 0
+        }
+      ]
+    }
+  ],
+  "status": "complete"
+}

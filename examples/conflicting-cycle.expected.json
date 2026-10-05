@@ -1,0 +1,181 @@
+{
+  "assurances": {
+    "availability": "unknown",
+    "build_metadata": "ignored-for-matching",
+    "compatibility": "unknown",
+    "package_existence": "unknown",
+    "policy": "synthetic-supplied-catalog-only",
+    "prereleases": "all-admitted",
+    "security": "unknown",
+    "selection": "one-candidate-per-package",
+    "unsupplied_catalog_possibilities": "unknown"
+  },
+  "catalog": {
+    "packages": [
+      {
+        "id": "A",
+        "index": 0,
+        "versions": [
+          {
+            "dependencies": [
+              {
+                "id": "d",
+                "index": 0,
+                "lower": null,
+                "target": "B",
+                "upper": null
+              }
+            ],
+            "id": "v",
+            "index": 0,
+            "version": "2.0.0"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "index": 1,
+        "versions": [
+          {
+            "dependencies": [
+              {
+                "id": "d",
+                "index": 0,
+                "lower": null,
+                "target": "A",
+                "upper": {
+                  "inclusive": true,
+                  "version": "1.0.0"
+                }
+              }
+            ],
+            "id": "v",
+            "index": 0,
+            "version": "1.0.0"
+          }
+        ]
+      }
+    ],
+    "roots": [
+      {
+        "id": "r",
+        "index": 0,
+        "lower": null,
+        "target": "A",
+        "upper": null
+      }
+    ]
+  },
+  "error": null,
+  "evaluation": "complete",
+  "finite_catalog_has_solution": false,
+  "input_profile": "finite-semver-catalog/1",
+  "limits": {
+    "assignments": 4096,
+    "dependencies": 48,
+    "dependencies_per_version": 4,
+    "depth": 8,
+    "identifier_chars": 64,
+    "identifiers": 16,
+    "nodes": 4096,
+    "numeric_digits": 32,
+    "output_bytes": 262144,
+    "packages": 6,
+    "preview": 16,
+    "raw_bytes": 65536,
+    "roots": 8,
+    "solutions": 128,
+    "version_chars": 256,
+    "version_occurrences": 130,
+    "versions": 18,
+    "versions_per_package": 3
+  },
+  "resolution": "no_solution_in_supplied_catalog",
+  "schema": "finite-resolution-report/1",
+  "search": {
+    "assignment_space": 4,
+    "assignments_checked": 4,
+    "exhaustive": true,
+    "first_trial_valid": false,
+    "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+    "preview_omitted_count": 0,
+    "solution_count": 0,
+    "strategy": "exhaustive-cartesian",
+    "trial_preview": [
+      {
+        "choices": [
+          0,
+          0
+        ],
+        "index": 0,
+        "rejection": {
+          "code": "bound_mismatch",
+          "origin": {
+            "dependency_index": 0,
+            "kind": "dependency",
+            "package_index": 1,
+            "root_index": null,
+            "version_index": 0
+          }
+        },
+        "valid": false
+      },
+      {
+        "choices": [
+          0,
+          null
+        ],
+        "index": 1,
+        "rejection": {
+          "code": "missing_selected_version",
+          "origin": {
+            "dependency_index": 0,
+            "kind": "dependency",
+            "package_index": 0,
+            "root_index": null,
+            "version_index": 0
+          }
+        },
+        "valid": false
+      },
+      {
+        "choices": [
+          null,
+          0
+        ],
+        "index": 2,
+        "rejection": {
+          "code": "missing_selected_version",
+          "origin": {
+            "dependency_index": null,
+            "kind": "root",
+            "package_index": null,
+            "root_index": 0,
+            "version_index": null
+          }
+        },
+        "valid": false
+      },
+      {
+        "choices": [
+          null,
+          null
+        ],
+        "index": 3,
+        "rejection": {
+          "code": "missing_selected_version",
+          "origin": {
+            "dependency_index": null,
+            "kind": "root",
+            "package_index": null,
+            "root_index": 0,
+            "version_index": null
+          }
+        },
+        "valid": false
+      }
+    ]
+  },
+  "solutions": [],
+  "status": "complete"
+}

@@ -1,0 +1,59 @@
+{
+  "closed_catalog": true,
+  "max_assignments": 4096,
+  "packages": [
+    {
+      "id": "A",
+      "versions": [
+        {
+          "dependencies": [
+            {
+              "id": "d",
+              "lower": null,
+              "target": "B",
+              "upper": null
+            }
+          ],
+          "id": "a1",
+          "version": "1.0.0"
+        },
+        {
+          "dependencies": [
+            {
+              "id": "d",
+              "lower": null,
+              "target": "C",
+              "upper": null
+            }
+          ],
+          "id": "a2",
+          "version": "2.0.0"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "versions": [
+        {
+          "dependencies": [],
+          "id": "v",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "versions": []
+    }
+  ],
+  "profile": "finite-semver-catalog/1",
+  "roots": [
+    {
+      "id": "r",
+      "lower": null,
+      "target": "A",
+      "upper": null
+    }
+  ],
+  "synthetic": true
+}

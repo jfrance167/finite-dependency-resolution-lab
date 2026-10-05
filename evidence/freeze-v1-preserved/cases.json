@@ -1,0 +1,6916 @@
+[
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [],
+        "roots": []
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 1,
+        "assignments_checked": 1,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [],
+          "choices": [],
+          "index": 0,
+          "selections": []
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [],
+      "profile": "finite-semver-catalog/1",
+      "roots": [],
+      "synthetic": true
+    },
+    "name": "empty-universe"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "one-root"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": []
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "orphan_selection",
+              "origin": {
+                "dependency_index": null,
+                "kind": "orphan",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": null,
+            "valid": true
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [],
+          "choices": [
+            null
+          ],
+          "index": 0,
+          "selections": []
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [],
+      "synthetic": true
+    },
+    "name": "empty-roots"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": []
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": false,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "no_solution_in_supplied_catalog",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 1,
+        "assignments_checked": 1,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 0,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              null
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": []
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "declared-empty"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": {
+              "inclusive": true,
+              "version": "1.0.0"
+            },
+            "target": "A",
+            "upper": {
+              "inclusive": true,
+              "version": "1.0.0"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": "equal",
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": "equal"
+            }
+          ],
+          "choices": [
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": {
+            "inclusive": true,
+            "version": "1.0.0"
+          },
+          "target": "A",
+          "upper": {
+            "inclusive": true,
+            "version": "1.0.0"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "equal-closed"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": {
+              "inclusive": false,
+              "version": "1.0.0"
+            },
+            "target": "A",
+            "upper": {
+              "inclusive": true,
+              "version": "1.0.0"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": false,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "no_solution_in_supplied_catalog",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 0,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "bound_mismatch",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": {
+            "inclusive": false,
+            "version": "1.0.0"
+          },
+          "target": "A",
+          "upper": {
+            "inclusive": true,
+            "version": "1.0.0"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "equal-open"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": {
+              "inclusive": false,
+              "version": "0.0.0"
+            },
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": "greater",
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": {
+            "inclusive": false,
+            "version": "0.0.0"
+          },
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "lower-open"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": {
+              "inclusive": true,
+              "version": "2.0.0"
+            },
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": false,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "no_solution_in_supplied_catalog",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 0,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "bound_mismatch",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": {
+            "inclusive": true,
+            "version": "2.0.0"
+          },
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "lower-fails"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": {
+              "inclusive": false,
+              "version": "2.0.0"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": "less"
+            }
+          ],
+          "choices": [
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": {
+            "inclusive": false,
+            "version": "2.0.0"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "upper-open"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": {
+              "inclusive": true,
+              "version": "0.0.0"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": false,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "no_solution_in_supplied_catalog",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 0,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "bound_mismatch",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": {
+            "inclusive": true,
+            "version": "0.0.0"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "upper-fails"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": {
+              "inclusive": false,
+              "version": "1.0.0"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": false,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "no_solution_in_supplied_catalog",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 0,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "bound_mismatch",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": {
+            "inclusive": false,
+            "version": "1.0.0"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "upper-equal-open"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": {
+              "inclusive": true,
+              "version": "2.0.0"
+            },
+            "target": "A",
+            "upper": {
+              "inclusive": true,
+              "version": "0.0.0"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": false,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "no_solution_in_supplied_catalog",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 0,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "bound_mismatch",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": {
+            "inclusive": true,
+            "version": "2.0.0"
+          },
+          "target": "A",
+          "upper": {
+            "inclusive": true,
+            "version": "0.0.0"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "inverted"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0-alpha"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": {
+              "inclusive": true,
+              "version": "1.0.0-0"
+            },
+            "target": "A",
+            "upper": {
+              "inclusive": true,
+              "version": "1.0.0"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": "greater",
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": "less"
+            }
+          ],
+          "choices": [
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0-alpha",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0-alpha"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": {
+            "inclusive": true,
+            "version": "1.0.0-0"
+          },
+          "target": "A",
+          "upper": {
+            "inclusive": true,
+            "version": "1.0.0"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "prerelease"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0-10"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": {
+              "inclusive": true,
+              "version": "1.0.0-2"
+            },
+            "target": "A",
+            "upper": {
+              "inclusive": true,
+              "version": "1.0.0-a"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": "greater",
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": "less"
+            }
+          ],
+          "choices": [
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0-10",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0-10"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": {
+            "inclusive": true,
+            "version": "1.0.0-2"
+          },
+          "target": "A",
+          "upper": {
+            "inclusive": true,
+            "version": "1.0.0-a"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "numeric-prerelease"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0+x"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": {
+              "inclusive": true,
+              "version": "1.0.0+y"
+            },
+            "target": "A",
+            "upper": {
+              "inclusive": true,
+              "version": "1.0.0+z"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": "equal",
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": "equal"
+            }
+          ],
+          "choices": [
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0+x",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0+x"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": {
+            "inclusive": true,
+            "version": "1.0.0+y"
+          },
+          "target": "A",
+          "upper": {
+            "inclusive": true,
+            "version": "1.0.0+z"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "build-bound"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": {
+              "inclusive": true,
+              "version": "2.0.0"
+            },
+            "target": "A",
+            "upper": null
+          },
+          {
+            "id": "s",
+            "index": 1,
+            "lower": null,
+            "target": "A",
+            "upper": {
+              "inclusive": true,
+              "version": "1.0.0"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": false,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "no_solution_in_supplied_catalog",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 0,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "bound_mismatch",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": {
+            "inclusive": true,
+            "version": "2.0.0"
+          },
+          "target": "A",
+          "upper": null
+        },
+        {
+          "id": "s",
+          "lower": null,
+          "target": "A",
+          "upper": {
+            "inclusive": true,
+            "version": "1.0.0"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "repeated-and"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": null,
+                    "target": "A",
+                    "upper": null
+                  }
+                ],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            },
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "A",
+                  "upper": null
+                }
+              ],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "self-compatible"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": {
+                      "inclusive": true,
+                      "version": "2.0.0"
+                    },
+                    "target": "A",
+                    "upper": null
+                  }
+                ],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": false,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "no_solution_in_supplied_catalog",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 0,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "bound_mismatch",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": {
+                    "inclusive": true,
+                    "version": "2.0.0"
+                  },
+                  "target": "A",
+                  "upper": null
+                }
+              ],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "self-conflict"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": {
+                      "inclusive": true,
+                      "version": "1.0.0"
+                    },
+                    "target": "B",
+                    "upper": {
+                      "inclusive": true,
+                      "version": "1.0.0"
+                    }
+                  }
+                ],
+                "id": "a1",
+                "index": 0,
+                "version": "1.0.0"
+              },
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": {
+                      "inclusive": true,
+                      "version": "2.0.0"
+                    },
+                    "target": "B",
+                    "upper": {
+                      "inclusive": true,
+                      "version": "2.0.0"
+                    }
+                  }
+                ],
+                "id": "a2",
+                "index": 1,
+                "version": "2.0.0"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "index": 1,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 6,
+        "assignments_checked": 6,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              1,
+              0
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "bound_mismatch",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 1
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              1,
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 1
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              0,
+              0
+            ],
+            "index": 2,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              0,
+              null
+            ],
+            "index": 3,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              0
+            ],
+            "index": 4,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              null
+            ],
+            "index": 5,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            },
+            {
+              "lower_pass": true,
+              "lower_relation": "equal",
+              "matches": true,
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              },
+              "selected_version_index": 0,
+              "target_package_index": 1,
+              "upper_pass": true,
+              "upper_relation": "equal"
+            }
+          ],
+          "choices": [
+            0,
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "a1",
+              "version_index": 0
+            },
+            {
+              "id": "B",
+              "package_index": 1,
+              "version": "1.0.0",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": {
+                    "inclusive": true,
+                    "version": "1.0.0"
+                  },
+                  "target": "B",
+                  "upper": {
+                    "inclusive": true,
+                    "version": "1.0.0"
+                  }
+                }
+              ],
+              "id": "a1",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": {
+                    "inclusive": true,
+                    "version": "2.0.0"
+                  },
+                  "target": "B",
+                  "upper": {
+                    "inclusive": true,
+                    "version": "2.0.0"
+                  }
+                }
+              ],
+              "id": "a2",
+              "version": "2.0.0"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "greedy-fallback"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": null,
+                    "target": "B",
+                    "upper": null
+                  }
+                ],
+                "id": "a1",
+                "index": 0,
+                "version": "1.0.0"
+              },
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": null,
+                    "target": "B",
+                    "upper": null
+                  }
+                ],
+                "id": "a2",
+                "index": 1,
+                "version": "2.0.0"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "index": 1,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "b1",
+                "index": 0,
+                "version": "1.0.0"
+              },
+              {
+                "dependencies": [],
+                "id": "b2",
+                "index": 1,
+                "version": "2.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 9,
+        "assignments_checked": 9,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 4,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              1,
+              1
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              1,
+              0
+            ],
+            "index": 1,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              1,
+              null
+            ],
+            "index": 2,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 1
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              0,
+              1
+            ],
+            "index": 3,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              0,
+              0
+            ],
+            "index": 4,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              0,
+              null
+            ],
+            "index": 5,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              1
+            ],
+            "index": 6,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              0
+            ],
+            "index": 7,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              null
+            ],
+            "index": 8,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 1,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            },
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 1
+              },
+              "selected_version_index": 1,
+              "target_package_index": 1,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            1,
+            1
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "2.0.0",
+              "version_id": "a2",
+              "version_index": 1
+            },
+            {
+              "id": "B",
+              "package_index": 1,
+              "version": "2.0.0",
+              "version_id": "b2",
+              "version_index": 1
+            }
+          ]
+        },
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 1,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            },
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 1
+              },
+              "selected_version_index": 0,
+              "target_package_index": 1,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            1,
+            0
+          ],
+          "index": 1,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "2.0.0",
+              "version_id": "a2",
+              "version_index": 1
+            },
+            {
+              "id": "B",
+              "package_index": 1,
+              "version": "1.0.0",
+              "version_id": "b1",
+              "version_index": 0
+            }
+          ]
+        },
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            },
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              },
+              "selected_version_index": 1,
+              "target_package_index": 1,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            0,
+            1
+          ],
+          "index": 2,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "a1",
+              "version_index": 0
+            },
+            {
+              "id": "B",
+              "package_index": 1,
+              "version": "2.0.0",
+              "version_id": "b2",
+              "version_index": 1
+            }
+          ]
+        },
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            },
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              },
+              "selected_version_index": 0,
+              "target_package_index": 1,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            0,
+            0
+          ],
+          "index": 3,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "a1",
+              "version_index": 0
+            },
+            {
+              "id": "B",
+              "package_index": 1,
+              "version": "1.0.0",
+              "version_id": "b1",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                }
+              ],
+              "id": "a1",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                }
+              ],
+              "id": "a2",
+              "version": "2.0.0"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "b1",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "b2",
+              "version": "2.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "four-solutions"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": null,
+                    "target": "B",
+                    "upper": null
+                  }
+                ],
+                "id": "a1",
+                "index": 0,
+                "version": "1.0.0"
+              },
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": null,
+                    "target": "C",
+                    "upper": null
+                  }
+                ],
+                "id": "a2",
+                "index": 1,
+                "version": "2.0.0"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "index": 1,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          },
+          {
+            "id": "C",
+            "index": 2,
+            "versions": []
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 6,
+        "assignments_checked": 6,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              1,
+              0,
+              null
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 1
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              1,
+              null,
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 1
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              0,
+              0,
+              null
+            ],
+            "index": 2,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              0,
+              null,
+              null
+            ],
+            "index": 3,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              0,
+              null
+            ],
+            "index": 4,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              null,
+              null
+            ],
+            "index": 5,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            },
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              },
+              "selected_version_index": 0,
+              "target_package_index": 1,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            0,
+            0,
+            null
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "a1",
+              "version_index": 0
+            },
+            {
+              "id": "B",
+              "package_index": 1,
+              "version": "1.0.0",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                }
+              ],
+              "id": "a1",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "C",
+                  "upper": null
+                }
+              ],
+              "id": "a2",
+              "version": "2.0.0"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "versions": []
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "rollback-inactive"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": null,
+                    "target": "B",
+                    "upper": null
+                  }
+                ],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "index": 1,
+            "versions": [
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": null,
+                    "target": "A",
+                    "upper": null
+                  }
+                ],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 4,
+        "assignments_checked": 4,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0,
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              0,
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              0
+            ],
+            "index": 2,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              null
+            ],
+            "index": 3,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            },
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              },
+              "selected_version_index": 0,
+              "target_package_index": 1,
+              "upper_pass": true,
+              "upper_relation": null
+            },
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 1,
+                "root_index": null,
+                "version_index": 0
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            0,
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "v",
+              "version_index": 0
+            },
+            {
+              "id": "B",
+              "package_index": 1,
+              "version": "1.0.0",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                }
+              ],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "A",
+                  "upper": null
+                }
+              ],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "compatible-cycle"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": null,
+                    "target": "B",
+                    "upper": null
+                  }
+                ],
+                "id": "v",
+                "index": 0,
+                "version": "2.0.0"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "index": 1,
+            "versions": [
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": null,
+                    "target": "A",
+                    "upper": {
+                      "inclusive": true,
+                      "version": "1.0.0"
+                    }
+                  }
+                ],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": false,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "no_solution_in_supplied_catalog",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 4,
+        "assignments_checked": 4,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 0,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0,
+              0
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "bound_mismatch",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 1,
+                "root_index": null,
+                "version_index": 0
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              0,
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              0
+            ],
+            "index": 2,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              null,
+              null
+            ],
+            "index": 3,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                }
+              ],
+              "id": "v",
+              "version": "2.0.0"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "A",
+                  "upper": {
+                    "inclusive": true,
+                    "version": "1.0.0"
+                  }
+                }
+              ],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "conflicting-cycle"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "z",
+                "index": 0,
+                "version": "1.0.0+z"
+              },
+              {
+                "dependencies": [],
+                "id": "a",
+                "index": 1,
+                "version": "1.0.0+a"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 3,
+        "assignments_checked": 3,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 2,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              1
+            ],
+            "index": 1,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 2,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0+z",
+              "version_id": "z",
+              "version_index": 0
+            }
+          ]
+        },
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 1,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            1
+          ],
+          "index": 1,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0+a",
+              "version_id": "a",
+              "version_index": 1
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "z",
+              "version": "1.0.0+z"
+            },
+            {
+              "dependencies": [],
+              "id": "a",
+              "version": "1.0.0+a"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "stable-build-order"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [
+                  {
+                    "id": "d",
+                    "index": 0,
+                    "lower": null,
+                    "target": "B",
+                    "upper": null
+                  }
+                ],
+                "id": "z",
+                "index": 0,
+                "version": "1.0.0+z"
+              },
+              {
+                "dependencies": [],
+                "id": "a",
+                "index": 1,
+                "version": "1.0.0+a"
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "index": 1,
+            "versions": []
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 3,
+        "assignments_checked": 3,
+        "exhaustive": true,
+        "first_trial_valid": false,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0,
+              null
+            ],
+            "index": 0,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": 0,
+                "kind": "dependency",
+                "package_index": 0,
+                "root_index": null,
+                "version_index": 0
+              }
+            },
+            "valid": false
+          },
+          {
+            "choices": [
+              1,
+              null
+            ],
+            "index": 1,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null,
+              null
+            ],
+            "index": 2,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 1,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            1,
+            null
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0+a",
+              "version_id": "a",
+              "version_index": 1
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                }
+              ],
+              "id": "z",
+              "version": "1.0.0+z"
+            },
+            {
+              "dependencies": [],
+              "id": "a",
+              "version": "1.0.0+a"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "versions": []
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "build-distinct-dependencies"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": {
+        "packages": [
+          {
+            "id": "A",
+            "index": 0,
+            "versions": [
+              {
+                "dependencies": [],
+                "id": "v",
+                "index": 0,
+                "version": "1.0.0"
+              }
+            ]
+          }
+        ],
+        "roots": [
+          {
+            "id": "r",
+            "index": 0,
+            "lower": null,
+            "target": "A",
+            "upper": null
+          }
+        ]
+      },
+      "error": null,
+      "evaluation": "complete",
+      "finite_catalog_has_solution": true,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "solutions_found",
+      "schema": "finite-resolution-report/1",
+      "search": {
+        "assignment_space": 2,
+        "assignments_checked": 2,
+        "exhaustive": true,
+        "first_trial_valid": true,
+        "order": "package-input/precedence-desc-stable/absent-last/rightmost-fastest",
+        "preview_omitted_count": 0,
+        "solution_count": 1,
+        "strategy": "exhaustive-cartesian",
+        "trial_preview": [
+          {
+            "choices": [
+              0
+            ],
+            "index": 0,
+            "rejection": null,
+            "valid": true
+          },
+          {
+            "choices": [
+              null
+            ],
+            "index": 1,
+            "rejection": {
+              "code": "missing_selected_version",
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              }
+            },
+            "valid": false
+          }
+        ]
+      },
+      "solutions": [
+        {
+          "checks": [
+            {
+              "lower_pass": true,
+              "lower_relation": null,
+              "matches": true,
+              "origin": {
+                "dependency_index": null,
+                "kind": "root",
+                "package_index": null,
+                "root_index": 0,
+                "version_index": null
+              },
+              "selected_version_index": 0,
+              "target_package_index": 0,
+              "upper_pass": true,
+              "upper_relation": null
+            }
+          ],
+          "choices": [
+            0
+          ],
+          "index": 0,
+          "selections": [
+            {
+              "id": "A",
+              "package_index": 0,
+              "version": "1.0.0",
+              "version_id": "v",
+              "version_index": 0
+            }
+          ]
+        }
+      ],
+      "status": "complete"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 2,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "exact-budget"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "assignment_limit",
+        "path": "/max_assignments"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "limit"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 1,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "budget-after-witness"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "catalog_not_closed",
+        "path": "/closed_catalog"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "unknown"
+    },
+    "input": {
+      "closed_catalog": false,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "open-catalog"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "target_unresolved",
+        "path": "/roots/0/target"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "unknown"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "X",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "missing-reference"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "target_unresolved",
+        "path": "/packages/0/versions/1/dependencies/0/target"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "unknown"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d",
+                  "lower": null,
+                  "target": "X",
+                  "upper": null
+                }
+              ],
+              "id": "v2",
+              "version": "2.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "unused-reference"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "profile_unsupported",
+        "path": "/profile"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "other/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "unsupported"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "other/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "unsupported"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "profile_unsupported",
+        "path": "/profile"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "other/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "unsupported"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "bad"
+            }
+          ]
+        }
+      ],
+      "profile": "other/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "unsupported-skips-semver"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "budget_invalid",
+        "path": "/max_assignments"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": null,
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "invalid"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": true,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "boolean-budget"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "synthetic_true_required",
+        "path": "/synthetic"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": null,
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "invalid"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": false
+    },
+    "name": "synthetic-false"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "boolean_required",
+        "path": "/closed_catalog"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": null,
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "invalid"
+    },
+    "input": {
+      "closed_catalog": 1,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "closed-wrong-type"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "version_grammar",
+        "path": "/packages/0/versions/0/version"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "invalid"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "01.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "version-grammar"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "core_limit",
+        "path": "/packages/0/versions/0/version"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "limit"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "999999999999999999999999999999999.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": {
+            "inclusive": true,
+            "version": "bad"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "core-cap"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "version_grammar",
+        "path": "/roots/0/upper/version"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "invalid"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "999999999999999999999999999999999.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": {
+            "inclusive": true,
+            "version": "bad"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "grammar-before-cap"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "duplicate_version",
+        "path": "/packages/0/versions/1/version"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": null,
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "invalid"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "v2",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "literal-duplicate"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "boolean_required",
+        "path": "/roots/0/upper/inclusive"
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": null,
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "invalid"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r",
+          "lower": null,
+          "target": "A",
+          "upper": {
+            "inclusive": 1,
+            "version": "1.0.0"
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "inclusive-exact-bool"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "solution_limit",
+        "path": ""
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "limit"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v0",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "v1",
+              "version": "2.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "v2",
+              "version": "3.0.0"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v0",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "v1",
+              "version": "2.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "v2",
+              "version": "3.0.0"
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v0",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "v1",
+              "version": "2.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "v2",
+              "version": "3.0.0"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v0",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "v1",
+              "version": "2.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "v2",
+              "version": "3.0.0"
+            }
+          ]
+        },
+        {
+          "id": "E",
+          "versions": [
+            {
+              "dependencies": [],
+              "id": "v0",
+              "version": "1.0.0"
+            },
+            {
+              "dependencies": [],
+              "id": "v1",
+              "version": "2.0.0"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r0",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        },
+        {
+          "id": "r1",
+          "lower": null,
+          "target": "B",
+          "upper": null
+        },
+        {
+          "id": "r2",
+          "lower": null,
+          "target": "C",
+          "upper": null
+        },
+        {
+          "id": "r3",
+          "lower": null,
+          "target": "D",
+          "upper": null
+        },
+        {
+          "id": "r4",
+          "lower": null,
+          "target": "E",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "solution-cap"
+  },
+  {
+    "expected": {
+      "assurances": {
+        "availability": "unknown",
+        "build_metadata": "ignored-for-matching",
+        "compatibility": "unknown",
+        "package_existence": "unknown",
+        "policy": "synthetic-supplied-catalog-only",
+        "prereleases": "all-admitted",
+        "security": "unknown",
+        "selection": "one-candidate-per-package",
+        "unsupplied_catalog_possibilities": "unknown"
+      },
+      "catalog": null,
+      "error": {
+        "code": "output_limit",
+        "path": ""
+      },
+      "evaluation": "incomplete",
+      "finite_catalog_has_solution": null,
+      "input_profile": "finite-semver-catalog/1",
+      "limits": {
+        "assignments": 4096,
+        "dependencies": 48,
+        "dependencies_per_version": 4,
+        "depth": 8,
+        "identifier_chars": 64,
+        "identifiers": 16,
+        "nodes": 4096,
+        "numeric_digits": 32,
+        "output_bytes": 262144,
+        "packages": 6,
+        "preview": 16,
+        "raw_bytes": 65536,
+        "roots": 8,
+        "solutions": 128,
+        "version_chars": 256,
+        "version_occurrences": 130,
+        "versions": 18,
+        "versions_per_package": 3
+      },
+      "resolution": "unknown",
+      "schema": "finite-resolution-report/1",
+      "search": null,
+      "solutions": null,
+      "status": "limit"
+    },
+    "input": {
+      "closed_catalog": true,
+      "max_assignments": 4096,
+      "packages": [
+        {
+          "id": "A",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "C",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "D",
+                  "upper": null
+                }
+              ],
+              "id": "v0",
+              "version": "1.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "C",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "D",
+                  "upper": null
+                }
+              ],
+              "id": "v1",
+              "version": "2.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "C",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "D",
+                  "upper": null
+                }
+              ],
+              "id": "v2",
+              "version": "3.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "C",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "D",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "E",
+                  "upper": null
+                }
+              ],
+              "id": "v0",
+              "version": "1.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "C",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "D",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "E",
+                  "upper": null
+                }
+              ],
+              "id": "v1",
+              "version": "2.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "C",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "D",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "E",
+                  "upper": null
+                }
+              ],
+              "id": "v2",
+              "version": "3.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "D",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "E",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "F",
+                  "upper": null
+                }
+              ],
+              "id": "v0",
+              "version": "1.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "D",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "E",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "F",
+                  "upper": null
+                }
+              ],
+              "id": "v1",
+              "version": "2.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "D",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "E",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "F",
+                  "upper": null
+                }
+              ],
+              "id": "v2",
+              "version": "3.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "E",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "F",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "A",
+                  "upper": null
+                }
+              ],
+              "id": "v0",
+              "version": "1.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "E",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "F",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "A",
+                  "upper": null
+                }
+              ],
+              "id": "v1",
+              "version": "2.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            }
+          ]
+        },
+        {
+          "id": "E",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "F",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "A",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                }
+              ],
+              "id": "v0",
+              "version": "1.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            },
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "F",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "A",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                }
+              ],
+              "id": "v1",
+              "version": "2.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            }
+          ]
+        },
+        {
+          "id": "F",
+          "versions": [
+            {
+              "dependencies": [
+                {
+                  "id": "d1",
+                  "lower": null,
+                  "target": "A",
+                  "upper": null
+                },
+                {
+                  "id": "d2",
+                  "lower": null,
+                  "target": "B",
+                  "upper": null
+                },
+                {
+                  "id": "d3",
+                  "lower": null,
+                  "target": "C",
+                  "upper": null
+                }
+              ],
+              "id": "v0",
+              "version": "1.0.0+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+            }
+          ]
+        }
+      ],
+      "profile": "finite-semver-catalog/1",
+      "roots": [
+        {
+          "id": "r0",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        },
+        {
+          "id": "r1",
+          "lower": null,
+          "target": "B",
+          "upper": null
+        },
+        {
+          "id": "r2",
+          "lower": null,
+          "target": "C",
+          "upper": null
+        },
+        {
+          "id": "r3",
+          "lower": null,
+          "target": "D",
+          "upper": null
+        },
+        {
+          "id": "r4",
+          "lower": null,
+          "target": "E",
+          "upper": null
+        },
+        {
+          "id": "r5",
+          "lower": null,
+          "target": "F",
+          "upper": null
+        },
+        {
+          "id": "r6",
+          "lower": null,
+          "target": "A",
+          "upper": null
+        },
+        {
+          "id": "r7",
+          "lower": null,
+          "target": "B",
+          "upper": null
+        }
+      ],
+      "synthetic": true
+    },
+    "name": "natural-output-cap"
+  }
+]

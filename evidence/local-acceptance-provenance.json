@@ -1,0 +1,311 @@
+{
+  "date": "2026-10-05T16:22:34.720605+00:00",
+  "runtime": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "pass_checks": true,
+  "counts": {
+    "normal": 20,
+    "optimized": 20
+  },
+  "frozen_cases": 42,
+  "complete_frozen_cases": 26,
+  "actual_cli_cases_per_mode": 42,
+  "tiny_membership_tables": 16,
+  "maximum_assignments_checked": 4096,
+  "checks": [
+    {
+      "check": "normal",
+      "exit": 0
+    },
+    {
+      "check": "optimized",
+      "exit": 0
+    },
+    {
+      "check": "compile",
+      "exit": 0
+    },
+    {
+      "check": "mutations",
+      "exit": 0
+    },
+    {
+      "check": "restored",
+      "exit": 0
+    },
+    {
+      "check": "bandit-production",
+      "exit": 0
+    },
+    {
+      "check": "bandit-harness",
+      "exit": 1
+    },
+    {
+      "check": "demo-compatible-cycle.input",
+      "exit": 0
+    },
+    {
+      "check": "demo-conflicting-cycle.input",
+      "exit": 0
+    },
+    {
+      "check": "demo-four-solutions.input",
+      "exit": 0
+    },
+    {
+      "check": "demo-greedy-fallback.input",
+      "exit": 0
+    },
+    {
+      "check": "demo-rollback-inactive.input",
+      "exit": 0
+    },
+    {
+      "check": "demo-stable-build-order.input",
+      "exit": 0
+    }
+  ],
+  "mutations": {
+    "outcomes": [
+      {
+        "mutation": "first-witness",
+        "target": "four-solutions",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 18,
+        "errors": 0
+      },
+      {
+        "mutation": "budget-negative",
+        "target": "budget-after-witness",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 1,
+        "errors": 0
+      },
+      {
+        "mutation": "inactive-deps",
+        "target": "rollback-inactive",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 4,
+        "errors": 0
+      },
+      {
+        "mutation": "drop-cycle-constraint",
+        "target": "conflicting-cycle",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 2,
+        "errors": 0
+      },
+      {
+        "mutation": "bounds-or",
+        "target": "equal-open",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 8,
+        "errors": 0
+      },
+      {
+        "mutation": "build-tiebreak",
+        "target": "stable-build-order",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 2,
+        "errors": 0
+      }
+    ],
+    "original_unchanged": true,
+    "original_sha256": {
+      "admission.py": "6cb4f87814bb2390f0c2a83b7cec8503b4d47abc2219c0833bd576f7e6356cda",
+      "cli.py": "c51b15a6ed94d1171e8ce3d68b15f3358bc077bb1b908b1bc1a18eab7b5a3cfb",
+      "model.py": "dbe050108944079c1bda6673a6f20a3b74fc93bb0817f3fb3068c29d2373d7ad",
+      "version.py": "978ffa596670b23086220950d332769d1ef856e506c047b87941589808074122",
+      "__init__.py": "8e807ecd1e3143e32acb3dadbca4632c696c40cbc6a25958926df0702c1a6440"
+    },
+    "work": "WORKSPACE\\finite-dependency-resolution-lab\\.verification-work\\mutations-5a0611efe92c48a1a70a6bf25e939685"
+  },
+  "demos": [
+    "compatible-cycle.input.json",
+    "conflicting-cycle.input.json",
+    "four-solutions.input.json",
+    "greedy-fallback.input.json",
+    "rollback-inactive.input.json",
+    "stable-build-order.input.json"
+  ],
+  "growth": {
+    "uncapped_expected_bytes": 913722,
+    "known_solutions": 108,
+    "assignment_space": 1152,
+    "output_cap": 262144,
+    "exact_boundary_checked": true
+  },
+  "bandit": {
+    "production_findings": 0,
+    "production_errors": 0,
+    "harness_findings": 8,
+    "harness_errors": 0
+  },
+  "secret_scan": {
+    "scoped_source_hits": 0,
+    "pattern_scan_only": true,
+    "new_files_have_no_git_history": true
+  },
+  "pure_source_gate": "PASS; static gate, not process containment",
+  "hosted_tests": "NOT RUN",
+  "source_sha256": [
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4308,
+      "sha256": "e791c8635df9bcde99ac30e34e7b25e451dfadbf3cd377da63aa4cb8cf4f900a"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 15011,
+      "sha256": "4508297de462e79dd0bf946a9a7c6b35cd258e304ee685fd1e3ea0046e42a0f9"
+    },
+    {
+      "path": "lab.py",
+      "bytes": 248,
+      "sha256": "2953a43f29df3652831eaa42da15ff9a65200f5fe0f925099bbb67a856fa793a"
+    },
+    {
+      "path": "tests/cases.json",
+      "bytes": 94701,
+      "sha256": "53adaa38d283ba478169e1e5832c93f139313f64513cee2ca0b0192ab26b8d9c"
+    },
+    {
+      "path": "tests/growth.json",
+      "bytes": 920026,
+      "sha256": "2c4a18619bf2dd2eeb697f5e0678e642242abe3bf01eb2d2d92c9b0b2acac7dc"
+    },
+    {
+      "path": "evidence/freeze.json",
+      "bytes": 1231,
+      "sha256": "bbdf289fca090a37fb13cc06b86b7bd635ae996bdf1a5508e5c1326094c3edaf"
+    },
+    {
+      "path": "resolution_lab/__init__.py",
+      "bytes": 191,
+      "sha256": "8e807ecd1e3143e32acb3dadbca4632c696c40cbc6a25958926df0702c1a6440"
+    },
+    {
+      "path": "resolution_lab/admission.py",
+      "bytes": 8733,
+      "sha256": "6cb4f87814bb2390f0c2a83b7cec8503b4d47abc2219c0833bd576f7e6356cda"
+    },
+    {
+      "path": "resolution_lab/cli.py",
+      "bytes": 3186,
+      "sha256": "c51b15a6ed94d1171e8ce3d68b15f3358bc077bb1b908b1bc1a18eab7b5a3cfb"
+    },
+    {
+      "path": "resolution_lab/model.py",
+      "bytes": 9068,
+      "sha256": "dbe050108944079c1bda6673a6f20a3b74fc93bb0817f3fb3068c29d2373d7ad"
+    },
+    {
+      "path": "resolution_lab/version.py",
+      "bytes": 3289,
+      "sha256": "978ffa596670b23086220950d332769d1ef856e506c047b87941589808074122"
+    },
+    {
+      "path": "scripts/freeze_oracles.py",
+      "bytes": 16319,
+      "sha256": "bc555f3b92989f931f0dc5b5447420dd197d2b1735b5609813949433699816cb"
+    },
+    {
+      "path": "scripts/run_tests.py",
+      "bytes": 368,
+      "sha256": "841deb729181fa691568690fca76ab53a5355557900783a5a6408dbec5b6ed37"
+    },
+    {
+      "path": "scripts/verify_mutations.py",
+      "bytes": 3869,
+      "sha256": "802c835e565d1c40cd9ede68793f03cab2e07fcd71b35aa4464d896056b2f556"
+    },
+    {
+      "path": "scripts/verify_project.py",
+      "bytes": 5844,
+      "sha256": "95e9c9d81d361eb3ce67fb07278cdb7e5fc749075db083844ceda9fc0c5156e8"
+    },
+    {
+      "path": "tests/test_boundaries.py",
+      "bytes": 9023,
+      "sha256": "baa59243ca0f5207fcf9ec03d59eef7fb55b3288820c34787473cbd365edd0bb"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "bytes": 5133,
+      "sha256": "2ba957b9b1d35e87d918f6d42df2f0ce3f3ae171881718b650bedb5562f4e899"
+    },
+    {
+      "path": "tests/test_frozen.py",
+      "bytes": 772,
+      "sha256": "03055e778e3f3b3afc60149edce446bf7b9a57d70ff01e77dfa1bfbb0155e9c5"
+    },
+    {
+      "path": "examples/compatible-cycle.expected.json",
+      "bytes": 3178,
+      "sha256": "7616c9848cfc0d22276473001f7487cb946d0d7a8afc6b974cc0e55832f52f65"
+    },
+    {
+      "path": "examples/compatible-cycle.input.json",
+      "bytes": 413,
+      "sha256": "56104ef967f4d575c59d94c562d2cad20eb6af9e42edbaf4141b2f4f91721ea4"
+    },
+    {
+      "path": "examples/conflicting-cycle.expected.json",
+      "bytes": 2374,
+      "sha256": "65507c9b4e8e530de48f0f87fdeb7addf62f300323d3f354629de89a3d133213"
+    },
+    {
+      "path": "examples/conflicting-cycle.input.json",
+      "bytes": 445,
+      "sha256": "1c6af3c01a69f538aa76c6b4597e2bf9f352b2ff75e6d45f6c7d50ffd222fb9d"
+    },
+    {
+      "path": "examples/four-solutions.expected.json",
+      "bytes": 5805,
+      "sha256": "79c8516a38833aff6fc237526bcb2c0151824c95f9fe92c3b81a9f0c7fbaaaa2"
+    },
+    {
+      "path": "examples/four-solutions.input.json",
+      "bytes": 511,
+      "sha256": "b12bf284f27d45865d176438b2176446022585109fdfd78d645e3b3db4a83f7b"
+    },
+    {
+      "path": "examples/greedy-fallback.expected.json",
+      "bytes": 3503,
+      "sha256": "5beaae96853094cca848b5439b0b3ec72bb49faeebc103d072801dde7ad90c1b"
+    },
+    {
+      "path": "examples/greedy-fallback.input.json",
+      "bytes": 590,
+      "sha256": "074f48f70e8c0c3f0f6c988a1a6012fe0ec02804a209de523fa70019b4bdc39c"
+    },
+    {
+      "path": "examples/rollback-inactive.expected.json",
+      "bytes": 3449,
+      "sha256": "be3c807d59d856ef7910493707bf96dbc24b516ffb6aeb5381ef3065e709765b"
+    },
+    {
+      "path": "examples/rollback-inactive.input.json",
+      "bytes": 487,
+      "sha256": "7770e5bf582ccfad997dc2588036370c711878ff64ba8339fcb2db4bc4f20b1d"
+    },
+    {
+      "path": "examples/stable-build-order.expected.json",
+      "bytes": 2480,
+      "sha256": "48b51af94f011036aa1a967d5c3783d0a8d03f2fb91b522006ae0a005f0c9ae1"
+    },
+    {
+      "path": "examples/stable-build-order.input.json",
+      "bytes": 295,
+      "sha256": "84d85a6c57aa348e9273dca8318e096a56efda19cb418f778f879e291b24e48c"
+    }
+  ],
+  "raw_directory": "WORKSPACE\\finite-dependency-resolution-lab\\.verification-work\\acceptance-04472a482c80437eb1595cd6dfe10083"
+}

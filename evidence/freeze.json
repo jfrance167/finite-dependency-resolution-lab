@@ -1,0 +1,35 @@
+{
+  "cases": 42,
+  "complete": 26,
+  "growth_bytes": 913722,
+  "phase": "before-product-source",
+  "records": [
+    {
+      "bytes": 14849,
+      "path": "PLAN.md",
+      "sha256": "1901ff47cbbce6b2f1e8964e68881cb3741fc87e79618d573c2522d414bcae31"
+    },
+    {
+      "bytes": 4308,
+      "path": "CONTRACT.md",
+      "sha256": "e791c8635df9bcde99ac30e34e7b25e451dfadbf3cd377da63aa4cb8cf4f900a"
+    },
+    {
+      "bytes": 16319,
+      "path": "scripts/freeze_oracles.py",
+      "sha256": "bc555f3b92989f931f0dc5b5447420dd197d2b1735b5609813949433699816cb"
+    },
+    {
+      "bytes": 179075,
+      "path": "tests/cases.json",
+      "sha256": "b071406ee05688c80d119f05ab29a7223ae8214c62708cc305395524b955b9ab"
+    },
+    {
+      "bytes": 1651657,
+      "path": "tests/growth.json",
+      "sha256": "48a78707f3939da5cfb0df90a6a88e02022cf7d4efc0ac67d872ceb3c4586dcc"
+    }
+  ],
+  "amendment": "Shared mutable construction input accidentally changed core-cap after its manual expected report was assembled. Restored that one input upper to null; expected report unchanged. Discovered after first product check; original freeze and formatter retained. No product output used to derive expected values.",
+  "publication_amendment": "PLAN privacy/header curation and JSON formatting only. Product source and expected values unchanged; original local freeze identities retained separately."
+}

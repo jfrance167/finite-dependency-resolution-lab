@@ -1,0 +1,311 @@
+{
+  "date": "2026-10-05T20:14:21.834862+00:00",
+  "runtime": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "pass_checks": true,
+  "counts": {
+    "normal": 20,
+    "optimized": 20
+  },
+  "frozen_cases": 42,
+  "complete_frozen_cases": 26,
+  "actual_cli_cases_per_mode": 42,
+  "tiny_membership_tables": 16,
+  "maximum_assignments_checked": 4096,
+  "checks": [
+    {
+      "check": "normal",
+      "exit": 0
+    },
+    {
+      "check": "optimized",
+      "exit": 0
+    },
+    {
+      "check": "compile",
+      "exit": 0
+    },
+    {
+      "check": "mutations",
+      "exit": 0
+    },
+    {
+      "check": "restored",
+      "exit": 0
+    },
+    {
+      "check": "bandit-production",
+      "exit": 0
+    },
+    {
+      "check": "bandit-harness",
+      "exit": 1
+    },
+    {
+      "check": "demo-compatible-cycle.input",
+      "exit": 0
+    },
+    {
+      "check": "demo-conflicting-cycle.input",
+      "exit": 0
+    },
+    {
+      "check": "demo-four-solutions.input",
+      "exit": 0
+    },
+    {
+      "check": "demo-greedy-fallback.input",
+      "exit": 0
+    },
+    {
+      "check": "demo-rollback-inactive.input",
+      "exit": 0
+    },
+    {
+      "check": "demo-stable-build-order.input",
+      "exit": 0
+    }
+  ],
+  "mutations": {
+    "outcomes": [
+      {
+        "mutation": "first-witness",
+        "target": "four-solutions",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 18,
+        "errors": 0
+      },
+      {
+        "mutation": "budget-negative",
+        "target": "budget-after-witness",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 1,
+        "errors": 0
+      },
+      {
+        "mutation": "inactive-deps",
+        "target": "rollback-inactive",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 4,
+        "errors": 0
+      },
+      {
+        "mutation": "drop-cycle-constraint",
+        "target": "conflicting-cycle",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 2,
+        "errors": 0
+      },
+      {
+        "mutation": "bounds-or",
+        "target": "equal-open",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 8,
+        "errors": 0
+      },
+      {
+        "mutation": "build-tiebreak",
+        "target": "stable-build-order",
+        "exit": 1,
+        "intended_assertion_detected": true,
+        "assertion_failures": 2,
+        "errors": 0
+      }
+    ],
+    "original_unchanged": true,
+    "original_sha256": {
+      "admission.py": "6cb4f87814bb2390f0c2a83b7cec8503b4d47abc2219c0833bd576f7e6356cda",
+      "cli.py": "c51b15a6ed94d1171e8ce3d68b15f3358bc077bb1b908b1bc1a18eab7b5a3cfb",
+      "model.py": "dbe050108944079c1bda6673a6f20a3b74fc93bb0817f3fb3068c29d2373d7ad",
+      "version.py": "978ffa596670b23086220950d332769d1ef856e506c047b87941589808074122",
+      "__init__.py": "8e807ecd1e3143e32acb3dadbca4632c696c40cbc6a25958926df0702c1a6440"
+    },
+    "work": "WORKSPACE\\.private\\publication-own-20261005\\stage-v2\\finite-dependency-resolution-lab\\.verification-work\\mutations-97881ffa811a4f9f8b148e23cdac499f"
+  },
+  "demos": [
+    "compatible-cycle.input.json",
+    "conflicting-cycle.input.json",
+    "four-solutions.input.json",
+    "greedy-fallback.input.json",
+    "rollback-inactive.input.json",
+    "stable-build-order.input.json"
+  ],
+  "growth": {
+    "uncapped_expected_bytes": 913722,
+    "known_solutions": 108,
+    "assignment_space": 1152,
+    "output_cap": 262144,
+    "exact_boundary_checked": true
+  },
+  "bandit": {
+    "production_findings": 0,
+    "production_errors": 0,
+    "harness_findings": 8,
+    "harness_errors": 0
+  },
+  "secret_scan": {
+    "scoped_source_hits": 0,
+    "pattern_scan_only": true,
+    "new_files_have_no_git_history": true
+  },
+  "pure_source_gate": "PASS; static gate, not process containment",
+  "hosted_tests": "NOT RUN",
+  "source_sha256": [
+    {
+      "path": "CONTRACT.md",
+      "bytes": 4308,
+      "sha256": "e791c8635df9bcde99ac30e34e7b25e451dfadbf3cd377da63aa4cb8cf4f900a"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 14849,
+      "sha256": "1901ff47cbbce6b2f1e8964e68881cb3741fc87e79618d573c2522d414bcae31"
+    },
+    {
+      "path": "lab.py",
+      "bytes": 248,
+      "sha256": "2953a43f29df3652831eaa42da15ff9a65200f5fe0f925099bbb67a856fa793a"
+    },
+    {
+      "path": "tests/cases.json",
+      "bytes": 179075,
+      "sha256": "b071406ee05688c80d119f05ab29a7223ae8214c62708cc305395524b955b9ab"
+    },
+    {
+      "path": "tests/growth.json",
+      "bytes": 1651657,
+      "sha256": "48a78707f3939da5cfb0df90a6a88e02022cf7d4efc0ac67d872ceb3c4586dcc"
+    },
+    {
+      "path": "evidence/freeze.json",
+      "bytes": 1419,
+      "sha256": "c8391807b7795c1a9e820911745248857ea50afcbc164b2705a2715e27afd559"
+    },
+    {
+      "path": "resolution_lab/__init__.py",
+      "bytes": 191,
+      "sha256": "8e807ecd1e3143e32acb3dadbca4632c696c40cbc6a25958926df0702c1a6440"
+    },
+    {
+      "path": "resolution_lab/admission.py",
+      "bytes": 8733,
+      "sha256": "6cb4f87814bb2390f0c2a83b7cec8503b4d47abc2219c0833bd576f7e6356cda"
+    },
+    {
+      "path": "resolution_lab/cli.py",
+      "bytes": 3186,
+      "sha256": "c51b15a6ed94d1171e8ce3d68b15f3358bc077bb1b908b1bc1a18eab7b5a3cfb"
+    },
+    {
+      "path": "resolution_lab/model.py",
+      "bytes": 9068,
+      "sha256": "dbe050108944079c1bda6673a6f20a3b74fc93bb0817f3fb3068c29d2373d7ad"
+    },
+    {
+      "path": "resolution_lab/version.py",
+      "bytes": 3289,
+      "sha256": "978ffa596670b23086220950d332769d1ef856e506c047b87941589808074122"
+    },
+    {
+      "path": "scripts/freeze_oracles.py",
+      "bytes": 16319,
+      "sha256": "bc555f3b92989f931f0dc5b5447420dd197d2b1735b5609813949433699816cb"
+    },
+    {
+      "path": "scripts/run_tests.py",
+      "bytes": 368,
+      "sha256": "841deb729181fa691568690fca76ab53a5355557900783a5a6408dbec5b6ed37"
+    },
+    {
+      "path": "scripts/verify_mutations.py",
+      "bytes": 3869,
+      "sha256": "802c835e565d1c40cd9ede68793f03cab2e07fcd71b35aa4464d896056b2f556"
+    },
+    {
+      "path": "scripts/verify_project.py",
+      "bytes": 5844,
+      "sha256": "95e9c9d81d361eb3ce67fb07278cdb7e5fc749075db083844ceda9fc0c5156e8"
+    },
+    {
+      "path": "tests/test_boundaries.py",
+      "bytes": 9023,
+      "sha256": "baa59243ca0f5207fcf9ec03d59eef7fb55b3288820c34787473cbd365edd0bb"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "bytes": 5133,
+      "sha256": "2ba957b9b1d35e87d918f6d42df2f0ce3f3ae171881718b650bedb5562f4e899"
+    },
+    {
+      "path": "tests/test_frozen.py",
+      "bytes": 772,
+      "sha256": "03055e778e3f3b3afc60149edce446bf7b9a57d70ff01e77dfa1bfbb0155e9c5"
+    },
+    {
+      "path": "examples/compatible-cycle.expected.json",
+      "bytes": 5581,
+      "sha256": "102895e460094465764ea7b7b669dff38b4828371076acdbab85572e90cbfe43"
+    },
+    {
+      "path": "examples/compatible-cycle.input.json",
+      "bytes": 862,
+      "sha256": "1e3d3ca16d81a221aac82b96cc4e808ef1d1af87f05912048072b504fccf9ab0"
+    },
+    {
+      "path": "examples/conflicting-cycle.expected.json",
+      "bytes": 4123,
+      "sha256": "43742183b0f27d71aa934e39f876f28e72a25b51a3764e7acbbac602f4e84812"
+    },
+    {
+      "path": "examples/conflicting-cycle.input.json",
+      "bytes": 945,
+      "sha256": "c970b5459b6ef0921bfacf93eb4d21c4c969308274852e7d55ccfff18c779124"
+    },
+    {
+      "path": "examples/four-solutions.expected.json",
+      "bytes": 10703,
+      "sha256": "ebf678c2d5cb10a22dc57a2feaff29864126ae01fe0fe932bcd3e0e08fe661b7"
+    },
+    {
+      "path": "examples/four-solutions.input.json",
+      "bytes": 1068,
+      "sha256": "9f4aac07d4f5a9b46c7a6212f9d52ea5ccbdac65d291b070ddbed7d0837030f1"
+    },
+    {
+      "path": "examples/greedy-fallback.expected.json",
+      "bytes": 6415,
+      "sha256": "78ab13bc2b36c70bdb02fd505f94dc55c76285bd62fcf735c07d9b08ff757f52"
+    },
+    {
+      "path": "examples/greedy-fallback.input.json",
+      "bytes": 1297,
+      "sha256": "2fc2a1b4d492369e35bb760c3bb99a584a3b8d3cce1e3432e77073cfc42e2196"
+    },
+    {
+      "path": "examples/rollback-inactive.expected.json",
+      "bytes": 6252,
+      "sha256": "7227b9ce45d721c8959793b997dce85762de0497b3211e06467862f178e9697c"
+    },
+    {
+      "path": "examples/rollback-inactive.input.json",
+      "bytes": 1016,
+      "sha256": "f2d9176c3af05d1cf4f1a7625ee83f6f94e5f6a86901aaebcd937a072581406d"
+    },
+    {
+      "path": "examples/stable-build-order.expected.json",
+      "bytes": 4086,
+      "sha256": "27464ddd25310cafe1040c6eb94551062fd9e8a72415e011662a3141474103b6"
+    },
+    {
+      "path": "examples/stable-build-order.input.json",
+      "bytes": 509,
+      "sha256": "e5430e715494a6731955b38c677df05969d54597799b799ec43c83bd7827fca5"
+    }
+  ],
+  "raw_directory": "WORKSPACE\\.private\\publication-own-20261005\\stage-v2\\finite-dependency-resolution-lab\\.verification-work\\acceptance-327b5abe09754a5a9f0f3176e056532d"
+}

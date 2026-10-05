@@ -1,0 +1,65 @@
+{
+  "phase": "local-complete-stopped",
+  "tested_source_hashes_matched": 30,
+  "no_new_tests_run": true,
+  "last_verified_remaining_percent": 81,
+  "later_coordinator_status": "usage unverifiable; substantive work held",
+  "successor_allowed": false,
+  "records": [
+    {
+      "path": "README.md",
+      "bytes": 7314,
+      "sha256": "1fb382cc69803859f2009ef315c043253487a85ccee7204fa84073cd11da35d4"
+    },
+    {
+      "path": "STATE.md",
+      "bytes": 4973,
+      "sha256": "3490256172800a6f98b4d273114299b3c7bbf36ddf87344cbd65f9e56b600147"
+    },
+    {
+      "path": "DECISIONS.md",
+      "bytes": 1229,
+      "sha256": "ce36259cbe619a882d425079f5db0fc642a1e9419b719cb7b1682555c9d4ef0a"
+    },
+    {
+      "path": "LEARNING.md",
+      "bytes": 1552,
+      "sha256": "14921d15daa100ffa0c3cd1c338311344d362951fb9230e088b41d8100d05ee7"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1428,
+      "sha256": "7268dc6c67d16d8142857fe04a3caa9b0994c5715ff082c61c0b57e47e1febf9"
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "bytes": 1003,
+      "sha256": "2810e3ef6440005d8e073061557a346f09e0a9ea1e307c247c2e9e0f105c5bc7"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1071,
+      "sha256": "c6862fa5dda33ca6e72e595855c674528df187d1feec4daf82846eac785c47eb"
+    },
+    {
+      "path": "tasks/todo.md",
+      "bytes": 938,
+      "sha256": "6c2d4b0c61120be5e9689512ffb4ab89f451c4151cd95e5c80e1a4782718aa91"
+    },
+    {
+      "path": "tasks/plan.md",
+      "bytes": 409,
+      "sha256": "34d20f78133ed72e87fa07189474b9c5cad31a9f6824d1f33c9d468b1fb3cfb0"
+    },
+    {
+      "path": "evidence/review.md",
+      "bytes": 2908,
+      "sha256": "657e376378dd33ee33d1fbc55786bee5362580a192e1d9d7709f5fa249df79de"
+    },
+    {
+      "path": "evidence/implementation-vault-receipt.json",
+      "bytes": 409,
+      "sha256": "57f4db8cbc002d24ac7634b65adaa5999e0932a879a62cf57422273067a95a60"
+    }
+  ]
+}

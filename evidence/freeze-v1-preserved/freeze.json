@@ -1,0 +1,33 @@
+{
+  "cases": 42,
+  "complete": 26,
+  "growth_bytes": 913722,
+  "phase": "before-product-source",
+  "records": [
+    {
+      "bytes": 15011,
+      "path": "PLAN.md",
+      "sha256": "4508297de462e79dd0bf946a9a7c6b35cd258e304ee685fd1e3ea0046e42a0f9"
+    },
+    {
+      "bytes": 4308,
+      "path": "CONTRACT.md",
+      "sha256": "e791c8635df9bcde99ac30e34e7b25e451dfadbf3cd377da63aa4cb8cf4f900a"
+    },
+    {
+      "bytes": 16319,
+      "path": "scripts/freeze_oracles.py",
+      "sha256": "bc555f3b92989f931f0dc5b5447420dd197d2b1735b5609813949433699816cb"
+    },
+    {
+      "bytes": 94730,
+      "path": "tests/cases.json",
+      "sha256": "4fef34ba7fc89e8e54620a4cc5da91c33169fba5c509a615fbb4babf2b685c29"
+    },
+    {
+      "bytes": 920026,
+      "path": "tests/growth.json",
+      "sha256": "2c4a18619bf2dd2eeb697f5e0678e642242abe3bf01eb2d2d92c9b0b2acac7dc"
+    }
+  ]
+}

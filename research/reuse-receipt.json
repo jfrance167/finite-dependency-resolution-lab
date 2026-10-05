@@ -1,0 +1,30 @@
+[
+  {
+    "source_project": "dependency-constraint-lab",
+    "path": "constraint_lab/admission.py",
+    "bytes": 7939,
+    "sha256": "fdbed43d90614247bd3bf408ffae90897855152928b0ea8f909c2a5648a123ad",
+    "inspection": "Read-only source/current accepted receipt; no code copied, sibling writes or tests rerun"
+  },
+  {
+    "source_project": "dependency-constraint-lab",
+    "path": "constraint_lab/version.py",
+    "bytes": 3515,
+    "sha256": "16f6027ee69b83d97bc821e2c76881ae5a3e780f1f465356ad98ef101ed26a13",
+    "inspection": "Read-only source/current accepted receipt; no code copied, sibling writes or tests rerun"
+  },
+  {
+    "source_project": "dependency-constraint-lab",
+    "path": "constraint_lab/model.py",
+    "bytes": 4884,
+    "sha256": "b7e6094d3c33bd34693528f56d5fc743243f3c19f193dacc9ede27273647eaae",
+    "inspection": "Read-only source/current accepted receipt; no code copied, sibling writes or tests rerun"
+  },
+  {
+    "source_project": "dependency-constraint-lab",
+    "path": "constraint_lab/cli.py",
+    "bytes": 3155,
+    "sha256": "6ba6bbfeb5d8851b8f4063a0db1acea50d7fb2cc2121ad508a8bb2c1986754db",
+    "inspection": "Read-only source/current accepted receipt; no code copied, sibling writes or tests rerun"
+  }
+]
